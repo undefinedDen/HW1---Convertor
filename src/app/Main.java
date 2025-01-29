@@ -8,11 +8,18 @@ public class Main {
         System.out.println("Convert app");
         System.out.println("App for measure converting.");
 
+        System.out.println("Version 1.0");
+
         double kg = 5;
+        double pnds = 14;
         double pound = getConvK(kg);
-        System.out.println("Result is " + pound + " pounds.");
+        double kilo = getConvP(pnds);
+        System.out.println("Result is " + pound + " lb and kilo is" + kilo + " kg.");
     }
     private static double getConvK(double kg){
         return kg * CONV_K;
+    }
+    private  static  double getConvP(double pnds){
+        return pnds/CONV_K;
     }
 }
